@@ -59,8 +59,10 @@ MAPS = {
             (1.7, -2.9, T, 4.2),                                           # bottom right divider
             (-1.7, -4.3, T, 1.4), (-1.7, -1.6, T, 1.6),                    # bottom left divider, door y = -3
         ],
-        "boxes": [(-3.5, 3.5, 0.8, 0.6), (0.5, 3.8, 1.2, 0.5), (3.3, 2.5, 0.6, 0.6),
-                  (-3.3, -3.8, 0.6, 0.8), (0.0, -3.0, 1.0, 1.0), (3.5, -3.5, 0.8, 0.8)],
+        # Furniture is centred in each room (>= 1.3 m clearance, like the maze gaps)
+        # or flush with a wall; narrower pockets trap the robot in escape loops.
+        "boxes": [(-3.35, 3.0, 0.5, 0.5), (0.0, 4.6, 1.2, 0.65), (3.35, 2.8, 0.5, 0.5),
+                  (-3.35, -3.3, 0.5, 0.5), (0.0, -3.0, 0.6, 0.6), (3.35, -3.0, 0.5, 0.5)],
         "starts": [(-4.2, 0.0, 0.0), (4.2, 0.0, math.pi), (0.0, 2.5, -math.pi / 2)],
     },
 }

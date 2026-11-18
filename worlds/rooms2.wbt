@@ -313,7 +313,7 @@ Solid {
 }
 
 Solid {
-  translation -3.500 3.500 0.400
+  translation -3.350 3.000 0.400
   children [
     Shape {
       appearance PBRAppearance {
@@ -322,7 +322,7 @@ Solid {
         metalness 0
       }
       geometry DEF BOX_0 Box {
-        size 0.800 0.600 0.800
+        size 0.500 0.500 0.800
       }
     }
   ]
@@ -331,7 +331,7 @@ Solid {
 }
 
 Solid {
-  translation 0.500 3.800 0.400
+  translation 0.000 4.600 0.400
   children [
     Shape {
       appearance PBRAppearance {
@@ -340,7 +340,7 @@ Solid {
         metalness 0
       }
       geometry DEF BOX_1 Box {
-        size 1.200 0.500 0.800
+        size 1.200 0.650 0.800
       }
     }
   ]
@@ -349,7 +349,7 @@ Solid {
 }
 
 Solid {
-  translation 3.300 2.500 0.400
+  translation 3.350 2.800 0.400
   children [
     Shape {
       appearance PBRAppearance {
@@ -358,7 +358,7 @@ Solid {
         metalness 0
       }
       geometry DEF BOX_2 Box {
-        size 0.600 0.600 0.800
+        size 0.500 0.500 0.800
       }
     }
   ]
@@ -367,7 +367,7 @@ Solid {
 }
 
 Solid {
-  translation -3.300 -3.800 0.400
+  translation -3.350 -3.300 0.400
   children [
     Shape {
       appearance PBRAppearance {
@@ -376,7 +376,7 @@ Solid {
         metalness 0
       }
       geometry DEF BOX_3 Box {
-        size 0.600 0.800 0.800
+        size 0.500 0.500 0.800
       }
     }
   ]
@@ -394,7 +394,7 @@ Solid {
         metalness 0
       }
       geometry DEF BOX_4 Box {
-        size 1.000 1.000 0.800
+        size 0.600 0.600 0.800
       }
     }
   ]
@@ -403,7 +403,7 @@ Solid {
 }
 
 Solid {
-  translation 3.500 -3.500 0.400
+  translation 3.350 -3.000 0.400
   children [
     Shape {
       appearance PBRAppearance {
@@ -412,7 +412,7 @@ Solid {
         metalness 0
       }
       geometry DEF BOX_5 Box {
-        size 0.800 0.800 0.800
+        size 0.500 0.500 0.800
       }
     }
   ]

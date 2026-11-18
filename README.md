@@ -98,17 +98,6 @@ Metrics: coverage (the share of reachable free space that is now known), map acc
 cells whose free/occupied label matches ground truth), time and distance to 90 % and 95 % coverage,
 number of goals, safety-layer escapes, planning time, and collisions (offline simulator only).
 
-## Suggested module ownership (for traceable commits)
-
-| Member | Module / files | Report sections |
-|---|---|---|
-| M1 | Webots world, robot set-up, `tools/make_worlds.py`, `controllers/` | 1, 2, 8 |
-| M2 | `occupancy_grid.py` (inverse sensor model, log-odds) | 3, 5 |
-| M3 | `frontier.py`, scoring in `explorer.py` (novelty) | 4, 7 (part) |
-| M4 | `planner.py`, `motion.py` (Dijkstra, inflation, pure pursuit) | 6, 7 (part) |
-| M5 | `sim2d.py`, `experiments/`, `tests/` | 9, 12 |
-
-## Known limitations
 
 * The pose comes from GPS and the inertial unit, so this is mapping with known poses, not SLAM.
   Odometry drift is not modelled.

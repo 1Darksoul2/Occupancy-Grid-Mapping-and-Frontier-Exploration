@@ -47,6 +47,22 @@ MAPS = {
         "boxes": [(3.8, -4.2, 0.5, 0.5), (-4.2, 1.0, 0.5, 0.5)],
         "starts": [(-4.0, -4.0, 0.0), (-4.0, 4.0, 0.0), (4.0, 1.25, math.pi)],
     },
+    # Central hallway (y = +-0.8) with three rooms on each side, 1.2 m doors.
+    # The bottom-middle room has no hallway door: it is reached only through the
+    # bottom-left room, so the robot must handle a room-behind-a-room.
+    "rooms2": {
+        "walls": _OUTER + [
+            (-4.475, 0.8, 1.05, T), (-1.675, 0.8, 2.15, T),               # y = +0.8, doors x = -3.35, 0, 3.35
+            (1.675, 0.8, 2.15, T), (4.475, 0.8, 1.05, T),
+            (-4.475, -0.8, 1.05, T), (0.0, -0.8, 5.5, T), (4.475, -0.8, 1.05, T),  # y = -0.8, doors x = -+3.35
+            (-1.7, 2.9, T, 4.2), (1.7, 2.9, T, 4.2),                       # top room dividers
+            (1.7, -2.9, T, 4.2),                                           # bottom right divider
+            (-1.7, -4.3, T, 1.4), (-1.7, -1.6, T, 1.6),                    # bottom left divider, door y = -3
+        ],
+        "boxes": [(-3.5, 3.5, 0.8, 0.6), (0.5, 3.8, 1.2, 0.5), (3.3, 2.5, 0.6, 0.6),
+                  (-3.3, -3.8, 0.6, 0.8), (0.0, -3.0, 1.0, 1.0), (3.5, -3.5, 0.8, 0.8)],
+        "starts": [(-4.2, 0.0, 0.0), (4.2, 0.0, math.pi), (0.0, 2.5, -math.pi / 2)],
+    },
 }
 
 

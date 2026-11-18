@@ -1,0 +1,293 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+
+WorldInfo {
+  info [ "AISR - occupancy-grid mapping and frontier exploration" "map: maze" ]
+  title "Frontier exploration - maze"
+  basicTimeStep 32
+}
+Viewpoint {
+  orientation 0 1 0 1.5708
+  position 0 0 17
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10.6 10.6
+  floorTileSize 1 1
+  wallHeight 0.05
+}
+
+Solid {
+  translation 0.000 5.000 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_0 Box {
+        size 10.150 0.150 0.800
+      }
+    }
+  ]
+  name "wall_0"
+  boundingObject USE WALL_0
+}
+
+Solid {
+  translation 0.000 -5.000 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_1 Box {
+        size 10.150 0.150 0.800
+      }
+    }
+  ]
+  name "wall_1"
+  boundingObject USE WALL_1
+}
+
+Solid {
+  translation 5.000 0.000 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_2 Box {
+        size 0.150 10.150 0.800
+      }
+    }
+  ]
+  name "wall_2"
+  boundingObject USE WALL_2
+}
+
+Solid {
+  translation -5.000 0.000 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_3 Box {
+        size 0.150 10.150 0.800
+      }
+    }
+  ]
+  name "wall_3"
+  boundingObject USE WALL_3
+}
+
+Solid {
+  translation -1.000 -2.500 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_4 Box {
+        size 8.000 0.150 0.800
+      }
+    }
+  ]
+  name "wall_4"
+  boundingObject USE WALL_4
+}
+
+Solid {
+  translation 1.000 0.000 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_5 Box {
+        size 8.000 0.150 0.800
+      }
+    }
+  ]
+  name "wall_5"
+  boundingObject USE WALL_5
+}
+
+Solid {
+  translation -1.000 2.500 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_6 Box {
+        size 8.000 0.150 0.800
+      }
+    }
+  ]
+  name "wall_6"
+  boundingObject USE WALL_6
+}
+
+Solid {
+  translation -1.000 -4.450 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_7 Box {
+        size 0.150 1.100 0.800
+      }
+    }
+  ]
+  name "wall_7"
+  boundingObject USE WALL_7
+}
+
+Solid {
+  translation 2.000 -1.950 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_8 Box {
+        size 0.150 1.100 0.800
+      }
+    }
+  ]
+  name "wall_8"
+  boundingObject USE WALL_8
+}
+
+Solid {
+  translation -1.000 0.550 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_9 Box {
+        size 0.150 1.100 0.800
+      }
+    }
+  ]
+  name "wall_9"
+  boundingObject USE WALL_9
+}
+
+Solid {
+  translation 1.000 4.450 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.82 0.78 0.72
+        roughness 1
+        metalness 0
+      }
+      geometry DEF WALL_10 Box {
+        size 0.150 1.100 0.800
+      }
+    }
+  ]
+  name "wall_10"
+  boundingObject USE WALL_10
+}
+
+Solid {
+  translation 3.800 -4.200 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.35 0.2
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BOX_0 Box {
+        size 0.500 0.500 0.800
+      }
+    }
+  ]
+  name "box_0"
+  boundingObject USE BOX_0
+}
+
+Solid {
+  translation -4.200 1.000 0.400
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.35 0.2
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BOX_1 Box {
+        size 0.500 0.500 0.800
+      }
+    }
+  ]
+  name "box_1"
+  boundingObject USE BOX_1
+}
+
+Pioneer3dx {
+  translation -4.000 -4.000 0.0975
+  rotation 0 0 1 0.0000
+  controller "frontier_explorer"
+  controllerArgs [
+    "--map=maze"
+    "--strategy=utility_commit"
+  ]
+  extensionSlot [
+    Lidar {
+      translation 0 0 0.25
+      name "lidar"
+      horizontalResolution 360
+      fieldOfView 6.2832
+      numberOfLayers 1
+      verticalFieldOfView 0.05
+      minRange 0.1
+      maxRange 5
+      noise 0.002
+    }
+    GPS {
+      name "gps"
+    }
+    InertialUnit {
+      name "imu"
+    }
+    Display {
+      name "map_display"
+      width 240
+      height 240
+    }
+  ]
+}
